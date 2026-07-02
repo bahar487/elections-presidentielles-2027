@@ -1,0 +1,8 @@
+candidat,parti,couleur,orientation,score_sondages_t1
+Emmanuel Macron (ou successeur RE),Renaissance,#FFCC00,Centre,0.22
+Marine Le Pen,RN,#1a1a2e,Extrême droite,0.28
+Jean-Luc Mélenchon (ou successeur FI),LFI/NUPES,#CC0000,Gauche radicale,0.18
+Candidat LR,Les Républicains,#1E90FF,Droite,0.1
+Candidat PS/Gauche,PS,#FF69B4,Gauche,0.09
+Candidat EELV,Les Verts,#2E8B57,Gauche écolo,0.06
+Autres,Divers,#999,Divers,0.07
