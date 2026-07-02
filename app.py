@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from sqlalchemy import create_engine
+
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
 
@@ -9,10 +9,10 @@ st.set_page_config(page_title="Élections Présidentielles France", page_icon="�
 
 @st.cache_data
 def load_data():
-    engine = create_engine("postgresql://bi_user:bi_password123@localhost:5432/elections")
-    df_elections = pd.read_sql("SELECT * FROM elections", engine)
-    df_insee = pd.read_sql("SELECT * FROM insee", engine)
-    df_cand = pd.read_sql("SELECT * FROM candidats_2027", engine)
+    
+    df_elections = pd.read_csv("raw/elections_presidentielles_2002_2022.csv")
+    df_insee = pd.read_csv("raw/insee_sociodemographie_departements.csv")
+    df_cand = pd.read_csv("raw/candidats_2027_hypotheses.csv")
     return df_elections, df_insee, df_cand
 
 @st.cache_resource
